@@ -1,13 +1,17 @@
 import React from "react";
 import {
   Image,
-  SafeAreaView,
   StyleSheet,
   Text,
   TouchableOpacity,
+  Dimensions,
   View,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import data from "./dataset/vehicles.json";
+
+const height = Dimensions.get('window').height;
+const width = Dimensions.get('window').width
 
 const back = require("./assets/icons/left-arrow.png");
 const dots = require("./assets/icons/dots.png");
@@ -132,13 +136,13 @@ const styles = StyleSheet.create({
     paddingLeft: 35,
   },
   headerSection: {
-    height: 70,
+    height: height*0.1,
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
   },
   menuIconStyle: {
-    width: 25,
+    width: width*0.071,
   },
   HeaderText: {
     fontSize: 20,
@@ -146,18 +150,18 @@ const styles = StyleSheet.create({
     fontWeight: "500",
   },
   faceIconStyle: {
-    width: 30,
+    width: width * 0.07,
   },
 
   imageSection: {
     width: "100%",
-    height: 250,
+    height: height*0.3,
     justifyContent: "center",
     alignItems: "center",
   },
   vehicleImage: {
-    width: 300,
-    height: 300,
+    width: width*0.77,
+    height: height*0.62,
   },
 
   headSection: {},
@@ -212,10 +216,10 @@ const styles = StyleSheet.create({
   },
   rentButton: {
     marginTop: 50,
-    height: 40,
+    height: height*0.04,
     // padding: 10,
     alignSelf: "center",
-    width: 250,
+    width: width*0.67,
     backgroundColor: "black",
     borderRadius: 8,
     justifyContent: "center",
