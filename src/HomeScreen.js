@@ -29,7 +29,24 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.safeArea}>
-      <Text>joseph</Text>
+      <View style={styles.container}>
+        <View style={styles.headerSection}>
+          <Image source={menu} resizeMode="contain" style={styles.menuIconStyle}/>
+          <Image source={face} resizeMode="contain" style={styles.faceIconStyle}/>
+        </View>
+        <View style={styles.titleSection}>
+
+        </View>
+        <View style={styles.searchSection}>
+
+        </View>
+        <View style={styles.typesSection}>
+
+        </View>
+        <View style={styles.listSection}>
+
+        </View>
+      </View>
     </SafeAreaView>
   );
 };
@@ -41,4 +58,21 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#e7e7e7",
   },
+  container:{
+    flex: 1,
+    paddingLeft: 35,
+    paddingRight: 35
+  },
+  headerSection:{
+    backgroundColor: 'red',
+    justifyContent: "space-between",
+    flexDirection:"row",
+    alignItems:"center"
+  },
+  menuIconStyle:{
+    width: 30
+  },
+  faceIconStyle:{
+    width: 40
+  }
 });
