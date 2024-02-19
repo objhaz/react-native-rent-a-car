@@ -29,7 +29,7 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.safeArea}>
-      
+      <Text>joseph</Text>
     </SafeAreaView>
   );
 };
